@@ -238,17 +238,21 @@ const SettingsContent = () => {
         <h1 className="text-2xl font-bold mb-1">Settings</h1>
         <p className="text-gray-600 mb-6">Manage your team and preferences here.</p>
 
-        {/* Navigation Tabs */}
-        <div className="bg-white rounded-md shadow-sm inline-flex overflow-x-auto mb-6">
-          <Button variant="link" className="text-gray-600 px-4 py-2 text-sm font-medium hover:text-gray-800 border-r border-gray-200">My details</Button>
-          <Button variant="link" className="text-gray-600 px-4 py-2 text-sm font-medium hover:text-gray-800 border-r border-gray-200">Profile</Button>
-          <Button variant="link" className="text-gray-600 px-4 py-2 text-sm font-medium hover:text-gray-800 border-r border-gray-200">Password</Button>
-          <Button variant="link" className="text-gray-600 px-4 py-2 text-sm font-medium hover:text-gray-800 border-r border-gray-200">Team</Button>
-          <Button variant="link" className="text-gray-600 px-4 py-2 text-sm font-medium hover:text-gray-800 border-r border-gray-200">Plan</Button>
-          <Button variant="link" className="text-gray-800 px-4 py-2 text-sm font-medium border-b-2 border-gray-800 border-r border-gray-200 bg-gray-100">Roles</Button>
-          <Button variant="link" className="text-gray-600 px-4 py-2 text-sm font-medium hover:text-gray-800 border-r border-gray-200">Notifications</Button>
-          <Button variant="link" className="text-gray-600 px-4 py-2 text-sm font-medium hover:text-gray-800 border-r border-gray-200">Integrations</Button>
-          <Button variant="link" className="text-gray-600 px-4 py-2 text-sm font-medium hover:text-gray-800">API</Button>
+        {/* Navigation Tabs - Updated for better mobile handling */}
+        <div className="relative w-full mb-6">
+          <div className="bg-white rounded-md shadow-sm overflow-x-auto no-scrollbar">
+            <div className="inline-flex min-w-full">
+              <Button variant="link" className="text-gray-600 px-4 py-2 text-sm font-medium hover:text-gray-800 border-r border-gray-200 whitespace-nowrap">My details</Button>
+              <Button variant="link" className="text-gray-600 px-4 py-2 text-sm font-medium hover:text-gray-800 border-r border-gray-200 whitespace-nowrap">Profile</Button>
+              <Button variant="link" className="text-gray-600 px-4 py-2 text-sm font-medium hover:text-gray-800 border-r border-gray-200 whitespace-nowrap">Password</Button>
+              <Button variant="link" className="text-gray-600 px-4 py-2 text-sm font-medium hover:text-gray-800 border-r border-gray-200 whitespace-nowrap">Team</Button>
+              <Button variant="link" className="text-gray-600 px-4 py-2 text-sm font-medium hover:text-gray-800 border-r border-gray-200 whitespace-nowrap">Plan</Button>
+              <Button variant="link" className="text-gray-800 px-4 py-2 text-sm font-medium border-b-2 border-gray-800 border-r border-gray-200 bg-gray-100 whitespace-nowrap">Roles</Button>
+              <Button variant="link" className="text-gray-600 px-4 py-2 text-sm font-medium hover:text-gray-800 border-r border-gray-200 whitespace-nowrap">Notifications</Button>
+              <Button variant="link" className="text-gray-600 px-4 py-2 text-sm font-medium hover:text-gray-800 border-r border-gray-200 whitespace-nowrap">Integrations</Button>
+              <Button variant="link" className="text-gray-600 px-4 py-2 text-sm font-medium hover:text-gray-800 whitespace-nowrap">API</Button>
+            </div>
+          </div>
         </div>
 
         {/* User Roles Section */}
