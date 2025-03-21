@@ -9,6 +9,14 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Checkbox } from "@/components/ui/checkbox";
+import Logo from "@/assets/Logomark.png";
+import ProfilePic from "@/assets/Image wrap.png";
+import Avatar from "@/assets/Avatar.png";
+import AvatarWrap from "@/assets/Avatar wrap.png";
+import AvatarWrap1 from "@/assets/Avatar wrap (1).png";
+import AvatarWrap2 from "@/assets/Avatar wrap (2).png";
+import AvatarWrap3 from "@/assets/Avatar wrap (3).png";
+import AvatarWrap4 from "@/assets/Avatar wrap (4).png";
 
 const Sidebar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -23,7 +31,7 @@ const Sidebar = () => {
       <header className="fixed top-0 left-0 right-0 z-20 md:hidden flex items-center justify-between p-4 bg-white border-b">
         <div className="flex items-center">
           <img
-            src="src/assets/Logomark.png"
+            src={Logo}
             alt="Untitled UI Logo"
             className="w-8 h-8 mr-3"
           />
@@ -53,7 +61,7 @@ const Sidebar = () => {
         <div className="p-4 flex justify-between items-center border-b md:border-b-0">
           <div className="flex items-center space-x-3">
             <img
-              src="src/assets/Logomark.png"
+              src={Logo}
               alt="Untitled UI Logo"
               className="w-8 h-8"
             />
@@ -191,7 +199,7 @@ const Sidebar = () => {
           <p className="text-xs text-gray-500 mt-1">Check out the new dashboard view. Pages now load faster.</p>
           <div className="mt-3 mb-1">
             <img 
-              src="src/assets/Image wrap.png" 
+              src={ProfilePic} 
               alt="Profile" 
               className="w-full h-24 object-cover rounded-lg"
             />
@@ -205,7 +213,7 @@ const Sidebar = () => {
         {/* User profile */}
         <div className="mt-auto p-4 border-t flex items-center">
           <img 
-            src="src/assets/Avatar.png" 
+            src={Avatar} 
             alt="Profile" 
             className="w-9 h-9 rounded-full object-cover mr-3"
           />
@@ -474,11 +482,11 @@ const SettingsContent = () => {
                     <td className="px-4 py-3 whitespace-nowrap">
                       <div className="flex items-center">
                         <div className="flex -space-x-2">
-                          <img src="src/assets/Avatar wrap (1).png" alt="User avatar" className="h-6 w-6 rounded-full border-2 border-white" />
-                          <img src="src/assets/Avatar wrap.png" alt="User avatar" className="h-6 w-6 rounded-full border-2 border-white" />
-                          <img src="src/assets/Avatar wrap (2).png" alt="User avatar" className="h-6 w-6 rounded-full border-2 border-white" />
-                          <img src="src/assets/Avatar wrap (3).png" alt="User avatar" className="h-6 w-6 rounded-full border-2 border-white" />
-                          <img src="src/assets/Avatar wrap (4).png" alt="User avatar" className="h-6 w-6 rounded-full border-2 border-white" />
+                          <img src={AvatarWrap} alt="User avatar" className="h-6 w-6 rounded-full border-2 border-white" />
+                          <img src={AvatarWrap1} alt="User avatar" className="h-6 w-6 rounded-full border-2 border-white" />
+                          <img src={AvatarWrap2} alt="User avatar" className="h-6 w-6 rounded-full border-2 border-white" />
+                          <img src={AvatarWrap3} alt="User avatar" className="h-6 w-6 rounded-full border-2 border-white" />
+                          <img src={AvatarWrap4} alt="User avatar" className="h-6 w-6 rounded-full border-2 border-white" />
                         </div>
                         <span className="ml-1 text-xs text-gray-500">+2</span>
                       </div>
@@ -505,11 +513,11 @@ const SettingsContent = () => {
                     <td className="px-4 py-3 whitespace-nowrap">
                       <div className="flex items-center">
                         <div className="flex -space-x-2">
-                           <img src="src/assets/Avatar wrap (1).png" alt="User avatar" className="h-6 w-6 rounded-full border-2 border-white" />
-                          <img src="src/assets/Avatar wrap.png" alt="User avatar" className="h-6 w-6 rounded-full border-2 border-white" />
-                          <img src="src/assets/Avatar wrap (2).png" alt="User avatar" className="h-6 w-6 rounded-full border-2 border-white" />
-                          <img src="src/assets/Avatar wrap (3).png" alt="User avatar" className="h-6 w-6 rounded-full border-2 border-white" />
-                          <img src="src/assets/Avatar wrap (4).png" alt="User avatar" className="h-6 w-6 rounded-full border-2 border-white" />
+                           <img src={AvatarWrap} alt="User avatar" className="h-6 w-6 rounded-full border-2 border-white" />
+                          <img src={AvatarWrap1} alt="User avatar" className="h-6 w-6 rounded-full border-2 border-white" />
+                          <img src={AvatarWrap2} alt="User avatar" className="h-6 w-6 rounded-full border-2 border-white" />
+                          <img src={AvatarWrap3} alt="User avatar" className="h-6 w-6 rounded-full border-2 border-white" />
+                          <img src={AvatarWrap4} alt="User avatar" className="h-6 w-6 rounded-full border-2 border-white" />
                         </div>
                         <span className="ml-1 text-xs text-gray-500">+1</span>
                       </div>
@@ -536,11 +544,11 @@ const SettingsContent = () => {
                     <td className="px-4 py-3 whitespace-nowrap">
                       <div className="flex items-center">
                         <div className="flex -space-x-2">
-                            <img src="src/assets/Avatar wrap (1).png" alt="User avatar" className="h-6 w-6 rounded-full border-2 border-white" />
-                          <img src="src/assets/Avatar wrap.png" alt="User avatar" className="h-6 w-6 rounded-full border-2 border-white" />
-                          <img src="src/assets/Avatar wrap (2).png" alt="User avatar" className="h-6 w-6 rounded-full border-2 border-white" />
-                          <img src="src/assets/Avatar wrap (3).png" alt="User avatar" className="h-6 w-6 rounded-full border-2 border-white" />
-                          <img src="src/assets/Avatar wrap (4).png" alt="User avatar" className="h-6 w-6 rounded-full border-2 border-white" />
+                            <img src={AvatarWrap} alt="User avatar" className="h-6 w-6 rounded-full border-2 border-white" />
+                          <img src={AvatarWrap1} alt="User avatar" className="h-6 w-6 rounded-full border-2 border-white" />
+                          <img src={AvatarWrap2} alt="User avatar" className="h-6 w-6 rounded-full border-2 border-white" />
+                          <img src={AvatarWrap3} alt="User avatar" className="h-6 w-6 rounded-full border-2 border-white" />
+                          <img src={AvatarWrap4} alt="User avatar" className="h-6 w-6 rounded-full border-2 border-white" />
                         </div>
                       </div>
                     </td>
@@ -566,9 +574,9 @@ const SettingsContent = () => {
                     <td className="px-4 py-3 whitespace-nowrap">
                       <div className="flex items-center">
                         <div className="flex -space-x-2">
-                            <img src="src/assets/Avatar wrap (1).png" alt="User avatar" className="h-6 w-6 rounded-full border-2 border-white" />
-                          <img src="src/assets/Avatar wrap.png" alt="User avatar" className="h-6 w-6 rounded-full border-2 border-white" />
-                          <img src="src/assets/Avatar wrap (2).png" alt="User avatar" className="h-6 w-6 rounded-full border-2 border-white" />
+                            <img src={AvatarWrap} alt="User avatar" className="h-6 w-6 rounded-full border-2 border-white" />
+                          <img src={AvatarWrap1} alt="User avatar" className="h-6 w-6 rounded-full border-2 border-white" />
+                          <img src={AvatarWrap2} alt="User avatar" className="h-6 w-6 rounded-full border-2 border-white" />
                         </div>
                       </div>
                     </td>
@@ -594,10 +602,10 @@ const SettingsContent = () => {
                     <td className="px-4 py-3 whitespace-nowrap">
                       <div className="flex items-center">
                         <div className="flex -space-x-2">
-                              <img src="src/assets/Avatar wrap (1).png" alt="User avatar" className="h-6 w-6 rounded-full border-2 border-white" />
-                          <img src="src/assets/Avatar wrap.png" alt="User avatar" className="h-6 w-6 rounded-full border-2 border-white" />
-                          <img src="src/assets/Avatar wrap (2).png" alt="User avatar" className="h-6 w-6 rounded-full border-2 border-white" />
-                          <img src="src/assets/Avatar wrap (3).png" alt="User avatar" className="h-6 w-6 rounded-full border-2 border-white" />
+                              <img src={AvatarWrap} alt="User avatar" className="h-6 w-6 rounded-full border-2 border-white" />
+                          <img src={AvatarWrap1} alt="User avatar" className="h-6 w-6 rounded-full border-2 border-white" />
+                          <img src={AvatarWrap2} alt="User avatar" className="h-6 w-6 rounded-full border-2 border-white" />
+                          <img src={AvatarWrap3} alt="User avatar" className="h-6 w-6 rounded-full border-2 border-white" />
                         </div>
                       </div>
                     </td>
@@ -623,10 +631,10 @@ const SettingsContent = () => {
                     <td className="px-4 py-3 whitespace-nowrap">
                       <div className="flex items-center">
                         <div className="flex -space-x-2">
-                             <img src="src/assets/Avatar wrap (1).png" alt="User avatar" className="h-6 w-6 rounded-full border-2 border-white" />
-                          <img src="src/assets/Avatar wrap.png" alt="User avatar" className="h-6 w-6 rounded-full border-2 border-white" />
-                          <img src="src/assets/Avatar wrap (2).png" alt="User avatar" className="h-6 w-6 rounded-full border-2 border-white" />
-                          <img src="src/assets/Avatar wrap (3).png" alt="User avatar" className="h-6 w-6 rounded-full border-2 border-white" />
+                             <img src={AvatarWrap} alt="User avatar" className="h-6 w-6 rounded-full border-2 border-white" />
+                          <img src={AvatarWrap1} alt="User avatar" className="h-6 w-6 rounded-full border-2 border-white" />
+                          <img src={AvatarWrap2} alt="User avatar" className="h-6 w-6 rounded-full border-2 border-white" />
+                          <img src={AvatarWrap3} alt="User avatar" className="h-6 w-6 rounded-full border-2 border-white" />
                         </div>
                       </div>
                     </td>
@@ -652,9 +660,9 @@ const SettingsContent = () => {
                     <td className="px-4 py-3 whitespace-nowrap">
                       <div className="flex items-center">
                         <div className="flex -space-x-2">
-                              <img src="src/assets/Avatar wrap (1).png" alt="User avatar" className="h-6 w-6 rounded-full border-2 border-white" />
-                          <img src="src/assets/Avatar wrap.png" alt="User avatar" className="h-6 w-6 rounded-full border-2 border-white" />
-                          <img src="src/assets/Avatar wrap (2).png" alt="User avatar" className="h-6 w-6 rounded-full border-2 border-white" />
+                              <img src={AvatarWrap} alt="User avatar" className="h-6 w-6 rounded-full border-2 border-white" />
+                          <img src={AvatarWrap1} alt="User avatar" className="h-6 w-6 rounded-full border-2 border-white" />
+                          <img src={AvatarWrap2} alt="User avatar" className="h-6 w-6 rounded-full border-2 border-white" />
                         </div>
                       </div>
                     </td>
